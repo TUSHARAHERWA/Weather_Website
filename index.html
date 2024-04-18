@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="WeatherContainer">
+      <div class="insideWeatherContainer">
+        <div class="weatherData1">
+          <div class="textWithButton">
+            <form class="OnSubmit">
+              <input type="text" class="inputText" />
+
+              <button class="btn">submit</button>
+            </form>
+          </div>
+          <h1 class="cityName"></h1>
+          <div class="weatherImage"></div>
+
+          <div class="forecast"><h1></h1></div>
+          <div class="temperature"><h1></h1></div>
+          <div>
+            <h1 class="minTemperature"></h1>
+            <h1 class="maxTemperature"></h1>
+          </div>
+        </div>
+        <div class="weatherData2">
+          <div class="text">
+            <i class="fa-solid fa-gauge-high"></i>
+            <h1>pressure</h1>
+            <h1 class="pressure forSize"></h1>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-droplet"></i>
+            <h1>humidity</h1>
+            <h1 class="humidity forSize"></h1>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-temperature-quarter"></i>
+            <h1>feels like</h1>
+            <h1 class="feelsLike forSize"></h1>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-wind"></i>
+            <h1>wind speed</h1>
+            <h1 class="windSpeed forSize"></h1>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-sun"></i>
+
+            <h1>sunrise</h1>
+            <h1 class="sunrise forSize"></h1>
+          </div>
+          <div class="text">
+            <i class="fa-regular fa-sun"></i>
+            <h1>sunset</h1>
+            <h1 class="sunset forSize"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

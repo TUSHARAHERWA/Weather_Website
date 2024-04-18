@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.WeatherContainer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, #1e1e1e, white, #1e1e1e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insideWeatherContainer {
+  width: 70vw;
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  border-radius: 2vw;
+}
+.weatherData1 {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.weatherData2 {
+  width: 50vw;
+  background-color: #1e1e1e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 2vw;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+Button {
+  color: #1e1e1e;
+  font-weight: bolder;
+  height: 5vh;
+  width: 12vw;
+  border-radius: 1vh;
+  font-size: 2vh;
+}
+input {
+  font-weight: bolder;
+  font-size: 2vh;
+  width: 15vw;
+  height: 5vh;
+  color: black;
+  border-radius: 1vh;
+}
+.temperature {
+  font-size: 5vw;
+}
+
+.forecast {
+  font-size: 3vw;
+  background-color: aliceblue;
+  color: black;
+  font-weight: bolder;
+  border-radius: 1vh;
+}
+
+.minTemperature,
+.maxTemperature {
+  font-size: 2vw;
+}
+
+i {
+  font-size: 5vw;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+@media (max-width: 768px) {
+  .insideWeatherContainer {
+    width: 87vw;
+    height: 65vh;
+  }
+  .weatherData1,
+  .weatherData2 {
+    width: 43.5vw;
+  }
+
+  Button {
+    height: 3vh;
+    width: 10vw;
+    font-size: 1vh;
+  }
+  input {
+    font-size: 1vh;
+    width: 15vw;
+    height: 3vh;
+  }
+  .minTemperature,
+  .maxTemperature {
+    font-size: 4vw;
+  }
+
+  .temperature,
+  .forecast {
+    font-size: 7vw;
+  }
+  .cityName {
+    font-size: 4vw;
+  }
+  h1 {
+    font-size: 3vw;
+  }
+}
